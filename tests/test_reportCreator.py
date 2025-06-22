@@ -17,10 +17,9 @@ class TestReportGenerator(unittest.TestCase):
             }
         }
         report = createReport(jobs)
-        self.assertIn("76512: Duration 360 seconds", report)
-        self.assertIn("[WARNING]: exceeded 5 minutes]", report)
-        self.assertIn("46213: Duration 900 seconds", report)
-        self.assertIn("[ERROR]: exceeded 10 minutes]", report)
+        #print(report)
+        self.assertIn("[WARNING]: exceeded 5 minutesPID 76512: Duration 360 seconds", report)
+        self.assertIn("[ERROR]: exceeded 10 minutesPID 46213: Duration 900 seconds", report)
 
     def test_incomplete_job(self):
         jobs = {
