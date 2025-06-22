@@ -12,7 +12,7 @@ def main():
     if len(sys.argv) > 1:
         logFile = sys.argv[1]
     else:
-        logFile =  "logs[14].log"
+        logFile =  "logs[13].log"
 
     try:
         jobs = parseLogFile(logFile)

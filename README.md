@@ -22,13 +22,13 @@ logMonitor/
 
 │   └── test_reportCreator.py
 
-├── logs[14].log          # Input log file (sample)
+├── logs[13].log          # Input log file (sample)
 
 └── job_output.txt        # Auto-generated output report
 
 ## Log File Format
 
-The log file (`logs[14].log`) must be a CSV with **4 columns**, in this exact order:
+The log file (`logs[13].log`) must be a CSV with **4 columns**, in this exact order:
 
 1. **Timestamp** – format: `HH:MM:SS`
 2. **Description** – short job description
@@ -46,7 +46,7 @@ The log file (`logs[14].log`) must be a CSV with **4 columns**, in this exact or
 ## How It Works
 
 ### main.py
-- Reads the log file (`logs[14].log` by default or from CLI).
+- Reads the log file (`logs[13].log` by default or from CLI).
 - Parses it using `logParser.py`.
 - Generates a report with `reportCreator.py`.
 - Prints the report to the console.
@@ -56,7 +56,7 @@ The log file (`logs[14].log`) must be a CSV with **4 columns**, in this exact or
 
 ## Running the App
 
-### Default (uses `logs[14].log`):
+### Default (uses `logs[13].log`):
 
 ```bash
 python main.py
