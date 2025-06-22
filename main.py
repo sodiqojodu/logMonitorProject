@@ -23,6 +23,9 @@ def main():
     report = createReport(jobs)
     print(report)
 
+    #saves the report to output.txt
+    with open("job_output.txt", "w") as f:
+        f.write(report)
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
